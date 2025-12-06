@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Dashboard</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Crypto Market Dashboard</h1>
+
+  <div class="controls">
+    <input id="searchInput" placeholder="Search coin..." />
+    <button id="searchBtn">Search</button>
+
+    <button id="sortMcapBtn">Sort by Market Cap</button>
+    <button id="sortChangeBtn">Sort by % Change</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Coin</th>
+        <th>Symbol</th>
+        <th>Price</th>
+        <th>Total Volume</th>
+        <th>Market Cap</th>
+        <th>% Change</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <!-- JS File -->
+  <script src="script.js"></script>
+</body>
+</html>
